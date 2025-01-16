@@ -1,1 +1,7 @@
 # Despliegue-Servidores-Python
+
+Este proyecto consiste en un script en Python llamado manage-p2.py, diseñado para automatizar la creación, configuración y gestión de un escenario virtual de máquinas y redes basado en KVM y Open vSwitch. El script permite crear, iniciar, detener y destruir un entorno de pruebas utilizado en la práctica de balanceo de tráfico de la asignatura Centros de Datos y de Provisión de Servicios (curso 2024-25). Además, cuenta con opciones configurables mediante un archivo JSON para definir el número de servidores web y habilitar un modo detallado de depuración.
+
+El script implementa una librería propia para la gestión de máquinas virtuales y redes (lib_vm.py), donde se definen métodos clave como la creación de imágenes de diferencias, configuración de interfaces de red y edición de archivos críticos de las máquinas virtuales. Entre sus funcionalidades avanzadas, permite configurar un balanceador de tráfico HAproxy y servidores web Apache, habilitar redes LAN mediante bridges virtuales, y realizar ajustes automáticos en cada máquina para asegurar el correcto funcionamiento del entorno.
+
+El proyecto también incluye funcionalidades opcionales como la monitorización en tiempo real del escenario, acceso a interfaces de gestión del balanceador, y control granular de las máquinas virtuales. Este proyecto ha sido desarrollado para facilitar y automatizar procesos complejos, siguiendo las mejores prácticas de programación y haciendo uso de herramientas robustas como subprocess, lxml, y virt-manager.
